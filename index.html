@@ -1,0 +1,1083 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="imageMapResizer.js"></script>
+
+<script>$(document).ready(function(e){$("map").imageMapResize();});</script>
+
+<style>
+
+body {
+    padding: 0px;
+    margin: 0px auto;
+    max-width: 960px;
+    
+}
+
+a {
+    cursor: pointer;
+}
+
+img {
+    display: inline-block;
+}
+
+#wrapper {
+    padding: 0px;
+}
+
+#wheelMap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#it-statement-text {
+    background-color: #e4e4e7;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+#regents-statement p {
+    margin: 0px auto;
+}
+
+#footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 960px;
+}
+
+.row {
+    margin: 0px auto;
+}
+
+button.close {
+    padding-right: 12px;
+}
+
+h4.modal-title {
+    padding-left: 12px;
+    color: #7a131b;
+}
+
+button.btn.btn-primary {
+    background-color: #c4c8cc;
+    color: black;
+}
+
+.btn-primary {
+    border: none;
+}
+
+button.btn.btn-primary:hover {
+    background-color: #b9bcbf;
+    cursor: pointer;
+}
+
+div.modal-footer {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer-logo {
+    text-align: right;
+}
+
+.print {
+	text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 575px) {
+  #regents-statement {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .footer-logo {
+    text-align: center;
+  }
+
+  #print-me {
+  	padding-top: 15px;
+  	text-align: left;
+  }
+}
+
+@media (max-width: 691px) {
+  #sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  #sidebar-image {
+    display: none;
+  }
+  #click-the-wheel {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1080px) {
+  #sidebar {
+    width: 100%;
+  }
+  #sidebar#sidebar-image {
+    display: none;
+  }
+} 
+
+@media (max-width: 1199px) {
+  
+  #footer#it-at-umn-footer {
+    visibility: show;
+  }
+}
+
+</style>
+</head>
+<body>
+    
+    <div class="main">
+    <div id="wrapperHeader">
+        <div id="header" >
+            <img src="it-ecosystem-header.png" style="width: 100%; height: auto; max-width:960px;" alt="header that says IT Ecosystem on the left in gold font with maroon background and yellow background on the right with the maroon M umn logo" />
+        </div> 
+    </div>
+    <div id="wrapper"> 
+        <div class="row">
+        <div id="wheelMap" class="col-lg-8 col-md-12 col-sm-12 col-xs-12" style="padding-right:20px; text-align:center; margin-bottom:20px;">
+            <img src="it-ecosystem-wheel-web.png" id="map-image" style="width: 884px; max-width: 100%; height: auto;" alt="a wheel with wedges for each department at the university of minnesota that provides it services with central services circle in the center" usemap="#map" />
+            <map name="map">
+                <a href="#" data-toggle="modal" data-target="#designModal"><area shape="poly" coords="31, 293, 260, 378, 252, 407, 15, 371" data-toggle="tooltip" data-html="true" title="College of Design"/></a></a>
+                <a href="#" data-toggle="modal" data-target="#athleticsModal"><area shape="poly" coords="35, 289, 71, 214, 276, 342, 263, 375" data-toggle="tooltip" data-html="true" title="Athletics"/></a>
+                <a href="#" data-toggle="modal" data-target="#foundationModal"><area shape="poly" coords="75, 211, 127, 144, 300, 311, 280, 341" data-toggle="tooltip" data-html="true" title="University of Minnesota Foundation"/></a>
+                <a href="#" data-toggle="modal" data-target="#globalModal"><area shape="poly" coords="130, 143, 192, 87, 330, 287, 302, 309" data-toggle="tooltip" data-html="true" title="Global Programs and Strategy Alliance"/></a>
+                <a href="#" data-toggle="modal" data-target="#uServicesModal"><area shape="poly" coords="195, 85, 268, 45, 364, 265, 332, 284" data-toggle="tooltip" data-html="true" title="Office of the Vice President for University Services"/></a>
+                <a href="#" data-toggle="modal" data-target="#cehdModal"><area shape="poly" coords="271, 43, 351, 19, 399, 253, 366, 264" data-toggle="tooltip" data-html="true" title="College of Education and Human Development"/></a>
+                <a href="#" data-toggle="modal" data-target="#crookstonModal"><area shape="poly" coords="13, 374, 252, 413, 250, 450, 7, 459" data-toggle="tooltip" data-html="true" title="Crookston"/></a>
+                <a href="#" data-toggle="modal" data-target="#rochesterModal"><area shape="poly" coords="9, 462, 250, 452, 254, 487, 21, 549" data-toggle="tooltip" data-html="true" title="Rochester"/></a>
+                <a href="#" data-toggle="modal" data-target="#duluthModal"><area shape="poly" coords="267, 521, 256, 491, 20, 553, 51, 632" data-toggle="tooltip" data-html="true" title="Duluth"/></a>
+                <a href="#" data-toggle="modal" data-target="#morrisModal"><area shape="poly" coords="270, 524, 285, 554, 95, 704, 53, 633" data-toggle="tooltip" data-html="true" title="Morris"/></a>
+                <a href="#" data-toggle="modal" data-target="#vetMedLibModal"><area shape="poly" coords="290, 558, 314, 583, 156, 769, 99, 707" data-toggle="tooltip" data-html="true" title="Veterinary Medical Library"/></a>
+                <a href="#" data-toggle="modal" data-target="#ahcModal"><area shape="poly" coords="317, 587, 346, 607, 229, 818, 159, 771" data-toggle="tooltip" data-html="true" title="Academic Health Center"/></a>
+                <a href="#" data-toggle="modal" data-target="#pharmModal"><area shape="poly" coords="349, 608, 380, 622, 311, 854, 232, 820" data-toggle="tooltip" data-html="true" title="College of Pharmacy"/></a>
+                <a href="#" data-toggle="modal" data-target="#nursingModal"><area shape="poly" coords="384, 623, 418, 631, 392, 873, 313, 855" data-toggle="tooltip" data-html="true" title="School of Nursing"/></a>
+                <a href="#" data-toggle="modal" data-target="#medicalModal"><area shape="poly" coords="423, 631, 458, 634, 481, 874, 396, 872" data-toggle="tooltip" data-html="true" title="Medical School"/></a>
+                <a href="#" data-toggle="modal" data-target="#boyntonModal"><area shape="poly" coords="499, 622, 572, 856, 650, 822, 532, 608" data-toggle="tooltip" data-html="true" title="Boynton" /></a>
+                <a href="#" data-toggle="modal" data-target="#bioSciModal"><area shape="poly" coords="535, 607, 653, 820, 720, 772, 564, 587" data-toggle="tooltip" data-html="true" title="College of Biological Sciences" /></a>
+                <a href="#" data-toggle="modal" data-target="#cedModal"><area shape="poly" coords="566, 585, 591, 559, 780, 709, 724, 771" data-toggle="tooltip" data-html="true" title="College of Continuing Education" /></a>
+                <a href="#" data-toggle="modal" data-target="#cfansModal"><area shape="poly" coords="610, 527, 593, 555, 783, 706, 831, 634" data-toggle="tooltip" data-html="true" title="College of Food, Agricultural &amp; Natural Resources Sciences" /></a>
+                <a href="#" data-toggle="modal" data-target="#hhModal"><area shape="poly" coords="629, 492, 614, 523, 832, 630, 860, 552" data-toggle="tooltip" data-html="true" title="Humphrey School" /></a>
+                <a href="#" data-toggle="modal" data-target="#lawModal"><area shape="poly" coords="627, 488, 862, 548, 874, 467, 630, 454" data-toggle="tooltip" data-html="true" title="Law School" /></a>
+                <a href="#" data-toggle="modal" data-target="#carlsonModal"><area shape="poly" coords="633, 414, 870, 379, 873, 464, 632, 451" data-toggle="tooltip" data-html="true" title="Carlson School of Management" /></a>
+                <a href="#" data-toggle="modal" data-target="#extensionModal"><area shape="poly" coords="624, 375, 849, 292, 870, 376, 630, 411" data-toggle="tooltip" data-html="true" title="University of Minnesota Extension" /></a>
+                <a href="#" data-toggle="modal" data-target="#gradProgramsModal"><area shape="poly" coords="606, 344, 809, 214, 846, 289, 620, 373" data-toggle="tooltip" data-html="true" title="Graduate Programs" /></a>
+                <a href="#" data-toggle="modal" data-target="#ceseModal"><area shape="poly" coords="757, 146, 807, 211, 603, 340, 581, 311" data-toggle="tooltip" data-html="true" title="College of Science &amp; Engineering" /></a>
+                <a href="#" data-toggle="modal" data-target="#claModal"><area shape="poly" coords="691, 88, 754, 143, 578, 308, 552, 285" data-toggle="tooltip" data-html="true" title="College of Liberal Arts" /></a>
+                <a href="#" data-toggle="modal" data-target="#libModal"><area shape="poly" coords="614, 45, 688, 85, 550, 283, 517, 265" data-toggle="tooltip" data-html="true" title="University Libraries" /></a>
+                <a href="#" data-toggle="modal" data-target="#officeOfVPRModal"><area shape="poly" coords="533, 20, 611, 43, 515, 264, 484, 253" data-toggle="tooltip" data-html="true" title="Office of the Vice President for Research" /></a>
+                <a href="#" data-toggle="modal" data-target="#sphModal"><area shape="poly" coords="445, 10, 528, 17, 480, 253, 444, 248" data-toggle="tooltip" data-html="true" title="School of Public Health" /></a>
+                <a href="#" data-toggle="modal" data-target="#asrModal"><area shape="poly" coords="355, 17, 442, 8, 440, 247, 402, 252" data-toggle="tooltip" data-html="true" title="Academic Support Resources" /></a>
+                <a href="#" data-toggle="modal" data-target="#centralModal"><area shape="circle" coords="442, 441, 188" data-toggle="tooltip" data-html="true" title="Central Services" /></a>
+                <a href="#" data-toggle="modal" data-target="#dentistryModal"><area shape="poly" coords="462, 631, 495, 625, 569, 858, 484, 872" data-toggle="tooltip" data-html="true" title="College of Dentistry" /></a>
+            </map>
+            <div id="print-me" class="container" style="max-height:50px;">
+        <div class="row" style="max-height:50px;">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        		<div class="print">
+        			<a href="print-me.html"><img src="print.png"  style="max-height: 20px; " alt="print icon" />
+        			<small><p>Printable Version</p></small></a>
+        		</div>
+        	</div>
+        </div>
+       </div>
+        </div>
+        <div id="sidebar" class="col-lg-4 col-sm-12 col-xs-12" style="padding:0px;">
+       
+            <div id="it-statement-text" style="width:100%;">
+                <h3 style="color: #7a131b;">
+                University of Minnesota Information Technologies
+                </h3>
+                <p>
+                A highly integrated, distributed, Information Technology management function, delivering high quality, high value, and improved efficiency by offering <strong style="color: #7a131b;">complementary, <em>not</em> competitive</strong> services, and leveraging central services in areas of IT expertise.
+                </p>
+                <p id="click-the-wheel"><small>Click on each section of the wheel to see departmental IT services!</small></p>
+            </div>
+            
+            <img id="sidebar-image" src="it-at-umn-bottom.png" style="width:100%; max-height:280px;" alt="it at umn logo with maroon and gold shapes" />
+            
+        </div>
+        
+       </div>
+       </div>
+
+        <div class="clearfix"></div>
+  
+        <div id="footer">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4 footer-logo" style="" ><img src="itatumn-logo.png" class="img-responsive" style="margin: 0px auto; display: inline-block; padding-left: 5px;"/></div>
+                    <div id="regents-statement" class="col-md-8 col-sm-6 col-xs-6" style="border-left: #e4e4e7 1px solid; display:inline-block;">
+                    <small><p>&copy; 2017 Regents of the University of Minnesota. All rights reserved. </p>
+                    <p>The University of Minnesota is an equal opportunity educator and employer.</p></small> 
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </div>
+        </div>
+    </div>
+
+    <!-- college of design modal -->
+<div id="designModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="College of Design IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="College of Design services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">College of Design</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Academic technology space management</li> 
+                <li>Implement formal IT governance structures</li>
+                <li>Modernize learning spaces</li> 
+                <li>Software management</li> 
+                <li>Technology consulting</li> 
+                <li>Large-format &amp; non-traditional printing &amp; scanning</li> 
+                <li>Non-traditional presentation &amp; audio/visual support</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo"/>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- athletics modal -->
+<div id="athleticsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="athletics IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="athletics it services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Athletics</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>CATAPULT, CastNET &amp; WOWZA management</li> 
+                <li>Video-enabled athlete performance analysis</li>
+                <li>Electronic device program</li> 
+                <li>On-site event support</li> 
+                <li>HIPAA &amp; PCI compliance</li> 
+                <li>Web content</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- university of minnesota foundation modal -->
+<div id="foundationModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="university of minnesota foundation IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="university of minnesota foundation">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">University of Minnesota Foundation</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>UMN development &amp; fundraising database &amp; CRM</li> 
+                <li>Network &amp; information security</li>
+                <li>UMN Foundation database management</li>
+                <li>Web content management</li> 
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- global programs and strategy alliance modal -->
+<div id="globalModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="global programs and strategy alliance IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="global programs and strategy alliance">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Global Programs &amp; Strategy Alliance</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>SEVIS data &amp; process management</li> 
+                <li>Multi-lingual web content management</li>
+                <li>Risk management for student &amp; business travel</li> 
+                <li>Funding application management &amp; payment disbursement</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- office of the vice president for university services modal -->
+<div id="uServicesModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="office of the vice president for university services IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="office of the vice president for university services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Office of the Vice President for University Services</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Point-of-sale</li> 
+                <li>Enterprise application delivery</li>
+                <li>Infrastructure &amp; security services</li> 
+                <li>User &amp; system support</li> 
+                <li>Vehicle fleet management</li> 
+                <li>Residential management</li> 
+                <li>Facilities management</li>
+                <li>Timekeeping</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- college of education and human development modal -->
+<div id="cehdModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="college of education and human development IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="college of education and human development">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">College of Education and Human Development</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Mobile device management</li> 
+                <li>Application development</li>
+                <li>Server hosting &amp; management</li> 
+                <li>ShowEvidence management</li> 
+                <li>T2 user support &amp; limited T1 support</li> 
+                <li>Technology recycling</li> 
+                <li>Web content</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- dentistry modal -->
+<div id="dentistryModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="College of Dentistry IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="College of Dentistry IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">College of Dentistry</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>            
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Electronic exam delivery</li> 
+                <li>Management of dentistry software &amp; hardware</li>
+                <li>Clinical info training, user &amp; system support</li> 
+                <li>Electronic signature capture</li> 
+                <li>Software test case management</li> 
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- boynton health modal -->
+<div id="boyntonModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Boynton IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Boynton IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Boynton</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Electronic health records (general and optometry)</li> 
+                <li>Medical transcription</li>
+                <li>Medical dictation</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- college of biological sciences modal -->
+<div id="bioSciModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="College of Biological Sciences IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="College of Biological Sciences IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">College of Biological Sciences</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>BLINK, course production, computer subsidy program, hosting services for server, database &amp; web, learning technology support</li> 
+                <li>Research technology support</li>
+                <li>Process automation</li> 
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- college of continuing education modal -->
+<div id="cedModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="College of Continuing Education IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="College of Continuing Education IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">College of Continuing Education</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Business analysis &amp; technology consulting</li> 
+                <li>Course production, CRM management</li>
+                <li>Data analysis &amp; reporting, non-credit student</li> 
+                <li>Administration, project management</li> 
+                <li>Software &amp; web management</li> 
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- college of food, agricultural and natural resource sciences modal -->
+<div id="cfansModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="College of Food, Agricultural &amp; Natural Resources Sciences IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="College of Food, Agricultural &amp; Natural Resources Sciences IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">College of Food, Agricultural &amp; Natural Resources Sciences</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Academic Technology tools &amp; support &amp; Academic Technology space management</li> 
+                <li>Application development &amp; reporting</li>
+                <li>Research technology support &amp; hosting services</li> 
+                <li>Web content management</li>
+                <li>Communications support</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- humphrey school modal -->
+<div id="hhModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Humphrey School IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Humphrey School IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Humphrey School</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Academic Technology space management</li> 
+                <li>Collaboration &amp; infrastructure management</li>
+                <li>Server hosting, software creation &amp; training</li> 
+                <li>User &amp; system support</li> 
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- law school modal -->
+<div id="lawModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Law School" aria-hidden="true">
+    <div class="modal-dialog" role="College of Pharmacy services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Law School</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Network printing</li> 
+                <li>TWEN for moot court, law review, online exams (ExamSoft)</li>
+                <li>Law case management for clinics</li> 
+                <li>Law library e-resources access</li> 
+                <li>National admissions system (LSAC) user support</li> 
+                <li>Research computing &amp; support</li> 
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- carlson school modal -->
+<div id="carlsonModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Carlson School IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Carlson School IT Services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Carlson School of Management</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Academic Technology space management, classroom support</li> 
+                <li>Course production, CRM/SF management</li>
+                <li>Laptop management program</li> 
+                <li>Research databases</li> 
+                <li>User &amp; system support</li> 
+                <li>Online exam environment</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- university of minnesota extension modal -->
+<div id="extensionModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="University of Minnesota Extension IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="University of Minnesota Extension IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">University of Minnesota Extension</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Credit card terminal support</li> 
+                <li>E-learning, video &amp; conferencing</li>
+                <li>Enterprise app delivery, hardware &amp; software purchasing, infrastructure management</li> 
+                <li>Technology training</li> 
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- graduate programs modal -->
+<div id="gradProgramsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Graduate Programs IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Graduate Programs IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Graduate Programs</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Academic Technology space management</li> 
+                <li>Harware &amp; software purchasing</li>
+                <li>Student administration services - apply yourself</li> 
+                <li>Web content management</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- college of science and engineering modal -->
+<div id="ceseModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="College of Science and Engineering IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="College of Science and Engineering IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">College of Science &amp; Engineering</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>CrashPlan, database hosting &amp; support</li> 
+                <li>Instructional lab management</li>
+                <li>Modernize learning spaces</li> 
+                <li>Network support &amp; security</li> 
+                <li>User &amp; system support, UNIX</li> 
+                <li>Web content management</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- college of liberal arts modal -->
+<div id="claModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="College of Liberal Arts IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="College of Liberal Arts IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">College of Liberal Arts</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Academic Technology tools management</li> 
+                <li>Course production, digital literacy badge maintenance</li>
+                <li>Data packets disseminated</li> 
+                <li>Human resources training modules framework</li> 
+                <li>Video services</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- university libraries modal -->
+<div id="libModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="University Libraries IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="University Libraries services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">University Libraries</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Develop &amp; maintain infrastructure</li> 
+                <li>Digital preservation program development &amp; management</li>
+                <li>eLearning support services</li> 
+                <li>Transform library spaces</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- office of the vice president for research modal -->
+<div id="officeOfVPRModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Office of the Vice President for Research IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Office of the Vice President for Research IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Office of the Vice President for Research</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Business analysis &amp; technology project services</li> 
+                <li>Data analytics &amp; reporting</li>
+                <li>Enterprise research systems support</li> 
+                <li>Solution development &amp; support</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- school of public health modal -->
+<div id="sphModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="School of Public Health IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="School of Public Health IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">School of Public Health</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Data integration</li> 
+                <li>Recruiting management through EMP/Liaison</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- academic support resources modal -->
+<div id="asrModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Academic Support Resources IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Academic Support Resources IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Academic Support Resources</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>User, systems &amp; operational support</li> 
+                <li>Application development</li>
+                <li>Project management</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- central services modal -->
+<div id="centralModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Central IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Central IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Central Services</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>ERP/Administrative Computing (OHR, ASR, FIN)</li> <li>Network &amp; Connectivity</li>
+				<li>End User Support</li>
+				<li>Infrastructure Services</li>
+				<li>Identity Management &amp; Security</li>
+				<li>IT Management</li>
+				<li>Academic Technology</li>
+				<li>HIPAA COE (with AHC) Communications &amp; Collaboration</li>
+				<li>Classroom scheduling &amp; management</li>
+				<li>Digital signage</li>
+				<li>Non-credit registration</li>
+				<li>Automated workflows (Workflow Gen)</li>
+				<li>Student tools (Course catalog, GPA calc, progress tracker) </li>
+				<li>Academic BI &amp; reporting</li>
+				<li>Branded short URLs (z links)</li>
+				<li>Student success monitoring (APLUS)</li>
+				<li>Video annotation</li>
+				<li>Free electronic textbook collection </li>
+				<li>e-commerce &amp; PCI compliance</li>
+				<li>Software: Design &amp; drafting (AutoCAD licensing)</li> <li>Geographic Information System (GIS)</li>
+				<li>Enterprise asset management</li>
+				<li>Software: Data visualization (Tableau Server)</li> <li>International data &amp; reporting</li>
+				<li>Scholarship tracking &amp; disbursement</li>
+				<li>Event ticketing &amp; e-commerce (AudienceView)</li> <li>Enrollment data dashboards ("By the Numbers")</li> 
+				<li>ClassInfo</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- morris modal -->
+<div id="morrisModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Morris IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Morris IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Morris</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>User support</li> 
+                <li>On-site support for classes &amp; events</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- veterinary medical library modal -->
+<div id="vetMedLibModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Veterinary Medical Library IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Veterinary Medical Library IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Veterinary Medical Library</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>The hospital application</li> 
+                <li>Radiology/PACS imaging services</li>
+                <li>Kronos time tracking</li> 
+                <li>Clinical rotation scheduling</li> 
+                <li>Non-credit registration</li> 
+                <li>Raptor center system</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- academic health center modal -->
+<div id="ahcModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Academic Health Center IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Academic Health Center IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Academic Health Center</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>StudyFinder</li> 
+                <li>E-consent</li>
+                <li>Clinical data repository</li> 
+                <li>End user support</li> 
+                <li>Secure server &amp; database infrastructure</li> 
+                <li>Affiliation agreements</li>
+                <li>Account reporting</li>
+                <li>AHC finance</li>
+                <li>HR reporting</li>
+                <li>Performance appraisal (PAT)</li>
+                <li>Medical reserve corps</li>
+                <li>Interprofessional education services (1Health)</li>
+                <li>Tableau server</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- college of pharmacy modal -->
+<div id="pharmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="College of Pharmacy IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="College of Pharmacy IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">College of Pharmacy</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Non-credit registration</li> 
+                <li>Supplemental application</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- school of nursing modal -->
+<div id="nursingModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="School of Nursing IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="School of Nursing IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">School of Nursing</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Scholarship processing</li>
+                <li>Doctor of nursing practice tracking</li>
+                <li>Faculty workload projection/teaching assignments</li> 
+                <li>Student service/application</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- medical school modal -->
+<div id="medicalModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Medical School IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Medical School IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Medical School</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Admissions processing</li> 
+                <li>Multiple mini interview support</li>
+                <li>Blackbag outcomes center/data integration project</li> 
+                <li>Anatomy Bequest process tracking</li> 
+                <li>Residency tracking</li> 
+                <li>Clinical scheduling &amp; lottery</li> 
+                <li>Manifold interface support</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo"/>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- duluth modal -->
+<div id="duluthModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Duluth IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Duluth IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Duluth</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Network services</li> 
+                <li>User support</li>
+                <li>Web content management</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- rochester modal -->
+<div id="rochesterModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Rochester IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Rochester IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Rochester</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Local computer support</li> 
+                <li>Classroom support</li>
+                <li>Laptop program</li> 
+                <li>Video conferencing</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- crookston modal -->
+<div id="crookstonModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Crookston IT Services" aria-hidden="true">
+    <div class="modal-dialog" role="Crookston IT services">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Crookston</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                
+            </div>
+            <div class="modal-body">
+                <ul>
+                <li>Laptop provision for students, faculty &amp; staff</li> 
+                <li>Support of University-provided laptops &amp; general user support</li>
+                <li>Data center for Learning Network of MN, Office of Enterprise Technologies, and government agencies in surrounding counties</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <img src="itatumn-logo-modal.png" class="mr-auto" alt="it at umn logo" />
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
